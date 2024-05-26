@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elytecrafter</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: radial-gradient(blue, rgb(0, 0, 85));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        nav{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+        }
+        .input{
+            background-color: rgb(0, 179, 255);
+            color: rgb(0, 0, 0);
+            font-size: xx-large;
+            border: 0;
+            box-shadow: 5px 5px 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .input:hover{
+            background-color: rgb(0, 140, 200);
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        .Central{
+            background-color: brown;
+            color: yellow;
+            border: 0;
+            transition: transform 1s ease-in-out;
+        }
+        .Central:hover{
+            background-color: rgb(120, 32, 32);
+            cursor: help;
+            transform: rotate(360deg);
+        }
+        .input:active{
+            background-color: rgb(0, 74, 106);
+            cursor: progress;
+            transform: scale(1.2);
+        }
+        .id{
+            cursor: default;
+        }
+        .Decoracao {
+            position: relative;
+            animation: levitar 5s ease-in-out infinite;
+        }
+
+        @keyframes levitar {
+            0% {
+                top: 0;
+            }
+            50% {
+                top: -20px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+        .perfil{
+            border-radius: 100px;
+        }
+        section{
+            background-color: aliceblue;
+            height: auto;
+            width: 50vh;
+            border-radius: 5px;
+            box-shadow: 5px 5px 2px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav><h1 class="id">Elytecrafter</h1><a href="index.html"><input class="input" type="button" value="Voltar"></a></nav>
+    <br>
+    <h1>A elytecrafter, é <b>CONFIAVEL?</b></h1>
+    <br>
+    <section><img class="perfil" src="perfil.jpg" width="50"><h5>Funcionário 1</h5><p>Sim, a nossa equipe é sim confiavel, com artes incriveis em um preço acessível.:></p></section>
+    <br>
+    <h1>O preço da identidade visual é cara?</h1>
+    <section><img class="perfil" src="perfil.jpg" width="50"><h5>Funcionário 1</h5><p>Não, os preços são barato</p> e a identidade visual é linda.</section>
+    <br>
+    <h1>As identidade visual, é bonita?</h1>
+    <section><img class="perfil" src="perfil.jpg" width="50"><h5>Funcionário 1</h5><p>Sim, para você ver que as identidade visuais são lindas, apenas ver ou na aba de modelos, que na verdade os modelos que tem são <b>Bem basicos</b> ou no instagram, que nossas artes por lá são extrenas de incriveis.</section>
+</body>
+</html>

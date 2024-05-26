@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elytecrafter</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: radial-gradient(blue, rgb(0, 0, 85));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        nav{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+        }
+        section{
+            background-color: rgb(0, 0, 0, 0.78);
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20vh;
+            padding-bottom: 20vh;
+        }
+        .input{
+            background-color: rgb(0, 179, 255);
+            color: rgb(0, 0, 0);
+            font-size: xx-large;
+            border: 0;
+            box-shadow: 5px 5px 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .input:hover{
+            background-color: rgb(0, 140, 200);
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        .Central{
+            background-color: brown;
+            color: yellow;
+            border: 0;
+            transition: transform 1s ease-in-out;
+        }
+        .Central:hover{
+            background-color: rgb(120, 32, 32);
+            cursor: help;
+            transform: rotate(360deg);
+        }
+        .input:active{
+            background-color: rgb(0, 74, 106);
+            cursor: progress;
+            transform: scale(1.2);
+        }
+        .id{
+            cursor: default;
+        }
+        .Decoracao {
+            position: relative;
+            animation: levitar 5s ease-in-out infinite;
+        }
+
+        @keyframes levitar {
+            0% {
+                top: 0;
+            }
+            50% {
+                top: -20px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav><h1 class="id">Elytecrafter</h1><a href="ajuda.html"><input class="Central" type="button" value="Ajuda"></a></nav>
+    <br>
+    <section><a href="modelos.html"><input class="input" type="button" value="Ver modelos"></a> <a href="https://wa.me/558199001525"><input class="input" type="button" value="Entrar em contato"></a> <a href="https://www.instagram.com/elytecrafter_agency/"><input class="input" type="button" value="Ver conta no instagram"></a></section>
+    <img class="Decoracao" src="Decoracao.png" height="1100">
+</body>
+</html>

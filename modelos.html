@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elytecrafter</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: radial-gradient(blue, rgb(0, 0, 85));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav{
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+        }
+        .Central{
+            background-color: brown;
+            color: yellow;
+            border: 0;
+            transition: transform 1s ease-in-out;
+        }
+        .Central:hover{
+            background-color: rgb(120, 32, 32);
+            cursor: help;
+            transform: rotate(360deg);
+        }
+        .input{
+            background-color: blue;
+            color: aliceblue;
+            border: 0;
+        }
+        .input:hover{
+            background-color: rgb(0, 0, 170);
+            cursor: pointer;
+        }
+        p{
+            color: aliceblue;
+        }
+        .Ver{
+            transition: transform 0.2s ease-in-out;
+        }
+        .Ver:hover{
+            transform: translateY(-5px);
+        }
+        b{
+            color: brown;
+        }
+
+        /*TESTE*/
+
+
+        .container-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .container p {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            transition: bottom 0.5s ease;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container:hover img {
+            transform: translateY(-30%);
+        }
+
+        .container:hover p {
+            bottom: 1%;
+        }
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav><h1 class="id">Elytecrafter</h1><a href="index.html"><input class="input" type="button" value="Voltar"></a><a href="ajuda.html"><input class="Central" type="button" value="Ajuda"></a></nav>
+    <br>
+    <p>Estes são alguns modelos basicos que <b>NÃO</b> está a venda, caso queira saber mais entre em contato ou no instagram ou no whatsapp. :D</p>
+    <br>
+    <br>
+    <div class="container-wrapper">
+        <div class="container">
+            <a href="1.png"><img src="1.png" alt="Imagem 1"></a>
+            <p>Uso não autorizado</p>
+        </div>
+        <div class="container">
+            <a href="2.png"><img src="2.png" alt="Imagem 2"></a>
+            <p>Uso não autorizado</p>
+        </div>
+        <div class="container">
+            <a href="3.png"><img src="3.png" alt="Imagem 3"></a>
+            <p>Uso não autorizado</p>
+        </div>
+        <div class="container">
+            <a href="4.png"><img src="4.png" alt="Imagem 4"></a>
+            <p>Uso não autorizado</p>
+        </div>
+    </div>
+</body>
+</html>
