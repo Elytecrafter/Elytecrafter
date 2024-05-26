@@ -18,16 +18,33 @@
             overflow: hidden;
         }
         nav{
-            background-color: black;
             color: aliceblue;
+
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #000000;
         }
+
+
+        .test2 {
+            display: flex;
+            align-items: center;
+        }
+        .test2 img {
+            margin-right: 10px;
+        }
+        .tets {
+            display: flex;
+            align-items: center;
+        }
+
+
         section{
             background-color: rgb(0, 0, 0, 0.78);
             padding-top: 20vh;
             padding-bottom: 20vh;
-            text-align: start;
             width: 80vh;
             height: 100vh;
         }
@@ -42,13 +59,14 @@
         .input:hover{
             background-color: rgb(0, 140, 200);
             cursor: pointer;
-            transform: translateX(4px);
+            transform: translateX(10px);
         }
         .Central{
             background-color: brown;
             color: yellow;
             border: 0;
             transition: transform 1s ease-in-out;
+            text-align: center;
         }
         .Central:hover{
             background-color: rgb(120, 32, 32);
@@ -82,7 +100,15 @@
     </style>
 </head>
 <body>
-    <nav><h1 class="id">Elytecrafter</h1><a href="ajuda.html"><input class="Central" type="button" value="Ajuda."></a></nav>
+    <nav>
+        <div class="test2">
+            <img src="elytecrafterr-Photoroom.png-Photoroom.png" width="35">
+            <h1 class="id">Elytecrafter</h1>
+        </div>
+        <div class="tets">
+            <a href="ajuda.html"><input class="Central" type="button" value="Ajuda."></a>
+        </div>
+    </nav>
     <br>
     <section><a href="modelos.html"><input class="input" type="button" value="Ver modelos"></a>
         <br>
